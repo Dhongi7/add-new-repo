@@ -60,3 +60,88 @@ understand.
 
 The end 
 
+
+start new
+
+
+How Ansible Works?
+In Ansible, there are two categories of computers: the control node and managed 
+nodes. The control node is a computer that runs Ansible. There must be at least one 
+control node. A managed node is any device being managed by the control node.
+Ansible works by connecting to nodes (clients, servers, or whatever you're 
+configuring) on a network, and then sending a small program called an Ansible 
+module to that node. Ansible executes these modules over SSH and removes them 
+when finished. The only requirement for this interaction is that your Ansible control 
+node has login access to the managed nodes. SSH keys are the most common way to 
+provide access. 
+Ansible management node is the controlling node, which controls the entire execution 
+of the Playbook. It’s the node from which you are running the installation, and the 
+inventory file provides the list of the host where the modules need to be run. The 
+management node makes ssh connection, and then it executes the modules on the host 
+machines and installs the product. It removes the modules once they are installed. So 
+that’s how ansible works
+Installing Ansible
+Control node requirements :
+Currently Ansible can be run from any machine with Python 2 (version 2.7) or Python 
+3 (versions 3.5 and higher) installed. This includes Red Hat, Debian, CentOS, macOS, 
+any of the BSDs, and so on. Windows is not supported for the control node.
+Installing Ansible on RHEL, CentOS :
+RPMs for currently supported versions of RHEL and CentOS are also available from 
+EPEL repository. First you need to configure EPEL repository in RHEL or centOS 
+using the below steps :
+RHEL/CentOS 7:
+#yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RHEL/CentOS 8:
+#yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+ 
+www.pragathitech.com M : 7337799123
+Once you are done with setting up EPEL repository, Verify Python is pre 
+installed or not.
+#python --version 
+If Python is Installed, Now install ansible using YUM.
+#yum install ansible
+Verify ansible is installed :How Ansible Works?
+In Ansible, there are two categories of computers: the control node and managed 
+nodes. The control node is a computer that runs Ansible. There must be at least one 
+control node. A managed node is any device being managed by the control node.
+Ansible works by connecting to nodes (clients, servers, or whatever you're 
+configuring) on a network, and then sending a small program called an Ansible 
+module to that node. Ansible executes these modules over SSH and removes them 
+when finished. The only requirement for this interaction is that your Ansible control 
+node has login access to the managed nodes. SSH keys are the most common way to 
+provide access. 
+Ansible management node is the controlling node, which controls the entire execution 
+of the Playbook. It’s the node from which you are running the installation, and the 
+inventory file provides the list of the host where the modules need to be run. The 
+management node makes ssh connection, and then it executes the modules on the host 
+machines and installs the product. It removes the modules once they are installed. So 
+that’s how ansible works
+Installing Ansible
+Control node requirements :
+Currently Ansible can be run from any machine with Python 2 (version 2.7) or Python 
+3 (versions 3.5 and higher) installed. This includes Red Hat, Debian, CentOS, macOS, 
+any of the BSDs, and so on. Windows is not supported for the control node.
+Installing Ansible on RHEL, CentOS :
+RPMs for currently supported versions of RHEL and CentOS are also available from 
+EPEL repository. First you need to configure EPEL repository in RHEL or centOS 
+using the below steps :
+RHEL/CentOS 7:
+#yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+RHEL/CentOS 8:
+#yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+ 
+www.pragathitech.com M : 7337799123
+Once you are done with setting up EPEL repository, Verify Python is pre 
+installed or not.
+#python --version 
+If Python is Installed, Now install ansible using YUM.
+#yum install ansible
+Verify ansible is installed :
+
+
+loading new ....
+.........
+.....
+..
+.
+
